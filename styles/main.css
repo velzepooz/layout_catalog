@@ -16,6 +16,7 @@ body {
           justify-content: center; }
   @media (max-width: 918px) {
     .row {
+      margin-top: 0;
       -ms-flex-wrap: wrap;
           flex-wrap: wrap;
       -webkit-box-align: space-evenly;
@@ -113,15 +114,9 @@ body {
     margin-bottom: 18px; }
   .card_position:not(:last-child) {
     margin-right: 48px; }
-  @media (max-width: 510px) {
-    .card_position {
-      margin-right: 48px; }
-    .card_position:not(:first-child) {
-      margin-top: 50px; } }
   @media (max-width: 918px) {
     .card_position {
-      margin-right: 48px; }
-    .card_position:not(:first-child) {
+      margin-right: 48px;
       margin-top: 50px; } }
   .card__button {
     display: block;
@@ -159,7 +154,11 @@ body {
 .comment__review {
   padding-bottom: 1px; }
 
-.comment__plate_stars--4 .comment__star:nth-child(-n+4) {
+.comment__plate_stars--1 .comment__star:nth-child(-n+1),
+.comment__plate_stars--2 .comment__star:nth-child(-n+2),
+.comment__plate_stars--3 .comment__star:nth-child(-n+3),
+.comment__plate_stars--4 .comment__star:nth-child(-n+4),
+.comment__plate_stars--5 .comment__star:nth-child(-n+5) {
   background-image: url(../images/star-active.svg); }
 
 .price__value {
