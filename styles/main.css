@@ -1,4 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap");
 body {
-  margin: 0; }
+  font-family: "roboto", arial, sans-serif;
+  font-size: 11px;
+  font-weight: 400px;
+  line-height: 13px;
+  color: #000; }
+
+.row {
+  margin: 50px auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center; }
+  @media (max-width: 918px) {
+    .row {
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+      -webkit-box-align: space-evenly;
+          -ms-flex-align: space-evenly;
+              align-items: space-evenly; } }
+
+.header {
+  height: 60px;
+  background: #fff;
+  -webkit-box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+          box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 0 50px;
+  line-height: 14px;
+  font-weight: 500;
+  font-size: 12px;
+  text-transform: uppercase; }
+
+.nav__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style-type: none;
+  margin: 0;
+  padding-left: 0; }
+
+.nav__item:not(:last-child) {
+  margin-right: 20px; }
+
+.nav__link {
+  display: block;
+  position: relative;
+  height: 60px;
+  text-decoration: none;
+  line-height: 60px;
+  color: #000; }
+  .nav__link:hover {
+    color: #00acdc; }
+
+.nav__link_is-active {
+  color: #00acdc; }
+  .nav__link_is-active::after {
+    content: "";
+    position: absolute;
+    background-size: contain;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background-color: #00acdc;
+    border-radius: 8px; }
+
+.card {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  height: 403px;
+  width: 200px;
+  background: #fff;
+  border: 1px solid #f3f3f3;
+  border-radius: 5px;
+  padding: 30px 14px 14px; }
+  .card__photo {
+    width: 160px;
+    height: 134px;
+    padding: 0 4.5px;
+    margin-bottom: 45px; }
+  .card__description {
+    margin-bottom: 5px;
+    font-weight: 500;
+    font-size: 12px;
+    line-height: 15px; }
+  .card__code {
+    margin-bottom: 15px; }
+  .card__row {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center; }
+  .card__row_comment-position {
+    margin-bottom: 22px; }
+  .card__row_price-position {
+    margin-bottom: 18px; }
+  .card_position:not(:last-child) {
+    margin-right: 48px; }
+  @media (max-width: 510px) {
+    .card_position {
+      margin-right: 48px; }
+    .card_position:not(:first-child) {
+      margin-top: 50px; } }
+  @media (max-width: 918px) {
+    .card_position {
+      margin-right: 48px; }
+    .card_position:not(:first-child) {
+      margin-top: 50px; } }
+  .card__button {
+    display: block;
+    width: 170px;
+    height: 40px;
+    background: #00acdc;
+    border-radius: 5px;
+    color: #fff;
+    text-transform: uppercase;
+    text-decoration: none;
+    text-align: center;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 40px;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s; }
+    .card__button:hover {
+      -webkit-box-sizing: border-box;
+              box-sizing: border-box;
+      border: 1px solid #00acdc;
+      background-color: #fff;
+      color: #00acdc; }
+
+.comment__plate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex; }
+
+.comment__star {
+  height: 15px;
+  width: 15px;
+  margin-right: 4px;
+  background: url(../images/star.svg) no-repeat center; }
+
+.comment__review {
+  padding-bottom: 1px; }
+
+.comment__plate_stars--4 .comment__star:nth-child(-n+4) {
+  background-image: url(../images/star-active.svg); }
+
+.price__value {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 19px; }
 
 /*# sourceMappingURL=main.css.map */
