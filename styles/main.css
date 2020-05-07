@@ -6,16 +6,16 @@ body {
   line-height: 13px;
   color: #000; }
 
-.row {
+.main {
   margin: 50px auto;
   display: grid;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  grid-template-columns: repeat(auto-fit, 200px);
-  grid-gap: 48px; }
+  grid-template-columns: repeat(4, 200px);
+  grid-gap: 50px 48px; }
   @media (max-width: 540px) {
-    .row {
+    .main {
       grid-template-columns: 200px; } }
 
 .header {
